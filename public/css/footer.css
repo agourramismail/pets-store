@@ -1,0 +1,159 @@
+/* Footer Styles */
+.footer {
+    background: #fff;
+    padding: 4rem 2rem 1rem;
+    margin-top: 4rem;
+    border-top: 1px solid #f0f0f0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+}
+
+/* Company Info Section */
+.company-info {
+    grid-column: span 1;
+}
+
+.footer-logo {
+    margin-bottom: 1.5rem;
+}
+
+.footer-logo-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.company-description {
+    color: #4A5568;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #F7FAFC;
+    color: #4A5568;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background: #7C3AED;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Footer Sections */
+.footer-section h3 {
+    color: #2D3748;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 1rem;
+}
+
+.footer-section ul li a {
+    color: #4A5568;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.footer-section ul li a:hover {
+    color: #7C3AED;
+    padding-left: 0.5rem;
+}
+
+/* Contact Section */
+.contact ul li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #4A5568;
+    font-size: 0.95rem;
+}
+
+.contact ul li svg {
+    flex-shrink: 0;
+    color: #7C3AED;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+    max-width: 1200px;
+    margin: 3rem auto 0;
+    padding-top: 2rem;
+    border-top: 1px solid #f0f0f0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #718096;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .company-info {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 640px) {
+    .footer {
+        padding: 3rem 1rem 1rem;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .company-info {
+        grid-column: span 1;
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .contact ul li {
+        justify-content: center;
+    }
+} 
