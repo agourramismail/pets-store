@@ -1,0 +1,161 @@
+body { background: #FAF7F4; color: #232323; }
+.hero-modern {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 4rem 0 2rem 0;
+    background: #FAF7F4;
+}
+.hero-modern-img {
+    width: 320px;
+    height: 320px;
+    border-radius: 2rem;
+    object-fit: cover;
+    box-shadow: 0 8px 32px rgba(44,34,84,0.10);
+    background: #fff;
+}
+.hero-modern-content {
+    max-width: 480px;
+}
+.hero-modern-content h1 {
+    font-size: 2.7rem;
+    font-weight: 900;
+    color: #232323;
+    margin-bottom: 1.2rem;
+    letter-spacing: -0.02em;
+}
+.hero-modern-content p {
+    font-size: 1.2rem;
+    color: #232323;
+    margin-bottom: 0.8rem;
+}
+.service-features-modern {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin: 3rem 0 2rem 0;
+    flex-wrap: wrap;
+}
+.feature-card-modern {
+    background: #fff;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 24px rgba(44,34,84,0.08);
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    min-width: 240px;
+    max-width: 300px;
+    flex: 1 1 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.feature-card-modern img {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 1rem;
+}
+.feature-card-modern h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #232323;
+    margin-bottom: 0.5rem;
+}
+.feature-card-modern p {
+    font-size: 1rem;
+    color: #232323;
+}
+.cta-modern {
+    background: #fff;
+    border-radius: 2rem;
+    box-shadow: 0 4px 32px rgba(44,34,84,0.10);
+    max-width: 900px;
+    margin: 3rem auto 2rem auto;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    color: #232323;
+}
+.cta-modern h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: #232323;
+}
+.cta-modern p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #232323;
+}
+.cta-modern .cta-btns {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cta-modern a {
+    display: inline-block;
+    background: #7C3AED;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 1rem 2.5rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(44,34,84,0.08);
+    transition: background 0.2s, color 0.2s;
+}
+.cta-modern a:hover {
+    background: #5b23b4;
+    color: #fff;
+}
+.cta-modern .cta-btns a .wa-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+    margin-bottom: 2px;
+}
+.cta-modern .cta-btns a.whatsapp-btn {
+    background: #fff;
+    color: #7C3AED;
+    border: 2px solid #7C3AED;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.cta-modern .cta-btns a.whatsapp-btn:hover {
+    background: #7C3AED;
+    color: #fff;
+}
+.contact-success-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    background: #d1fae5;
+    color: #065f46;
+    border-radius: 1.2rem;
+    font-size: 1.13rem;
+    font-weight: 700;
+    padding: 1.1rem 1.7rem;
+    margin-bottom: 1.2em;
+    margin-top: 0.5em;
+    box-shadow: 0 2px 12px rgba(16,185,129,0.08);
+    text-align: center;
+}
+.contact-success-message::before {
+    content: '\2714';
+    font-size: 1.7em;
+    color: #10b981;
+    display: inline-block;
+    margin-right: 0.5em;
+}
+@media (max-width: 900px) {
+    .hero-modern { flex-direction: column; gap: 2rem; padding: 2.5rem 0 1.5rem 0; }
+    .hero-modern-img { width: 220px; height: 220px; }
+}
+@media (max-width: 600px) {
+    .contact-success-message {
+        font-size: 1rem;
+        padding: 0.8rem 0.7rem;
+    }
+} 

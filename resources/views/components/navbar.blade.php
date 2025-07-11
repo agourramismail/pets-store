@@ -20,20 +20,34 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle">NOS PRODUITS <span class="arrow">&#9662;</span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">CHAT</a></li>
-                        <li><a href="#">CHIEN</a></li>
-                        <li><a href="#">OISEAU</a></li>
+                        <li><a href="{{ route('products.chat') }}">CHAT</a></li>
+                        <li><a href="{{ route('products.chien') }}">CHIEN</a></li>
+                        <li><a href="{{ route('products.oiseau') }}">OISEAU</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle">NOS SERVICES <span class="arrow">&#9662;</span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">TOILETTAGE</a></li>
-                        <li><a href="#">HÔTELLERIE</a></li>
-                        <li><a href="#">DRESSAGE</a></li>
+                        <li><a href="{{ route('services.toilettage') }}">TOILETTAGE</a></li>
+                        <li><a href="{{ route('services.hotellerie') }}">HÔTELLERIE</a></li>
+                        <li><a href="{{ route('services.dressage') }}">DRESSAGE</a></li>
                     </ul>
                 </li>
-                <li><a href="#">CONTACTEZ NOUS</a></li>
+                <li><a href="{{ route('contact') }}">CONTACTEZ NOUS</a></li>
+                @auth
+                    @if(auth()->user()->is_admin)
+                        <li><a href="{{ route('admin.dashboard') }}">Admin</a></li>
+                    @endif
+                @endauth
+                <li>
+                    <a href="{{ route('cart.show') }}" class="cart-link" title="Voir le panier" style="position:relative;">
+                        <img src="{{ asset('img/cart.png') }}" alt="Panier" class="cart-icon" style="height:1.5em;width:auto;vertical-align:middle;">
+                        @php $cart = session('cart', []); $count = array_sum(array_column($cart, 'quantity')); @endphp
+                        @if($count > 0)
+                            <span class="cart-count" style="position:absolute;top:-8px;right:-8px;background:#e53e3e;color:#fff;border-radius:50%;padding:2px 7px;font-size:0.9em;">{{ $count }}</span>
+                        @endif
+                    </a>
+                </li>
             </ul>
             <!-- Mobile Actions -->
             <div class="mobile-actions">

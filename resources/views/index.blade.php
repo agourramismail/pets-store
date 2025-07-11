@@ -29,7 +29,7 @@
                 <p>Offrez-lui une vie saine et équilibrée, entre soins, éducation<br>et nutrition naturelle.</p>
                 <div class="hero-buttons">
                     <a href="#" class="hero-btn">ALIMENTATION</a>
-                    <a href="#" class="hero-btn outline">NOS SERVICES</a>
+                    <a href="#services-section" class="hero-btn outline">NOS SERVICES</a>
                 </div>
                 <div class="familly-pet-container">
                     <img src="{{ asset('img/familypet.png') }}" alt="" class="familly-pet">
@@ -42,9 +42,8 @@
     <!-- Shop Online Section -->
     <section class="shop-section">
         <div class="shop-container">
-            <h2>Nos Type D'animaux de compagnie</h2>
-            <p class="shop-desc">Tout ce dont vous avez besoin est ici. Des recettes d'alimentation et services pour<br>votre animal à chaque étape de sa vie.</p>
-            
+            <h2>Nos animaux de compagnie</h2>
+            <p class="shop-desc">Découvrez notre sélection complète d’aliments, d’accessoires et de soins pour chiens, chats et oiseaux. Offrez à votre compagnon le meilleur à chaque étape de sa vie.</p>
             <div class="shop-cards">
                 <!-- Dog Food Card -->
                 <div class="shop-card">
@@ -52,33 +51,31 @@
                         <img src="{{ asset('img/dogp.webp') }}" alt="Chien avec des aliments" class="card-img">
                     </div>
                     <div class="card-content">
-                        <span class="card-label">DSIPONIBLE</span>
+                        <span class="card-label">DISPONIBLE</span>
                         <h3>CHIENS</h3>
-                        <a href="#" class="about-btn">DECOUVRIR <span class="arrow-icon">→</span></a>
+                        <a href="{{ route('products.chien') }}" class="about-btn">Voir les produits <span class="arrow-icon">→</span></a>
                     </div>
                 </div>
-
                 <!-- Cat Treats Card -->
                 <div class="shop-card">
                     <div class="card-image" style="background-color: #FFE5E5;">
                         <img src="{{ asset('img/catp.webp') }}" alt="Chat avec des friandises" class="card-img">
                     </div>
                     <div class="card-content">
-                        <span class="card-label">DSIPONIBLE</span>
+                        <span class="card-label">DISPONIBLE</span>
                         <h3>CHATS</h3>
-                        <a href="#" class="about-btn">DECOUVRIR <span class="arrow-icon">→</span></a>
+                        <a href="{{ route('products.chat') }}" class="about-btn">Voir les produits <span class="arrow-icon">→</span></a>
                     </div>
                 </div>
-
                 <!-- Bird Food Card -->
                 <div class="shop-card">
                     <div class="card-image" style="background-color: #E0F5E9;">
                         <img src="{{ asset('img/birdp.webp') }}" alt="Oiseau avec des aliments" class="card-img">
                     </div>
                     <div class="card-content">
-                        <span class="card-label">DSIPONIBLE</span>
+                        <span class="card-label">DISPONIBLE</span>
                         <h3>OISEAUX</h3>
-                        <a href="#" class="about-btn">DECOUVRIR <span class="arrow-icon">→</span></a>
+                        <a href="{{ route('products.oiseau') }}" class="about-btn">Voir les produits <span class="arrow-icon">→</span></a>
                     </div>
                 </div>
             </div>
@@ -86,9 +83,9 @@
     </section>
 
     <!-- About Us Section -->
-    <section class="about-section">
+    <section class="about-section" id="about-section">
         <div class="about-container">
-            <h2 class="about-title">À PROPOS</h2>
+            <h2 class="about-title">À propos de Happy Pet</h2>
             <div class="about-content">
                 <div class="about-image-main">
                     <img src="{{ asset('img/home-animals.png') }}" alt="Animaux heureux" class="main-dog-img">
@@ -98,9 +95,9 @@
                         <img src="{{ asset('img/dogp.webp') }}" alt="Chien mignon" class="secondary-dog-img">
                     </div>
                     <div class="about-text">
-                        <h3>LE MEILLEUR AMI DE VOTRE ANIMAL</h3>
-                        <p>Nos soins vétérinaires vont au-delà du simple traitement des maladies ; nous nous concentrons sur les soins préventifs, les examens de bien-être et l'attention bienveillante pour vous et votre animal.</p>
-                        <a href="#" class="about-btn">DÉCOUVRIR <span class="arrow-icon">→</span></a>
+                        <h3>Votre partenaire bien-être animal</h3>
+                        <p>Chez Happy Pet, nous mettons la santé, le confort et la joie de vos animaux au cœur de nos priorités. Notre équipe passionnée vous accompagne avec des conseils personnalisés, des produits de qualité et des services adaptés à chaque besoin.</p>
+                        <a href="#services-section" class="about-btn">En savoir plus <span class="arrow-icon">→</span></a>
                     </div>
                 </div>
             </div>
@@ -108,47 +105,45 @@
     </section>
 
     <!-- Services Section -->
-    <section class="services-section">
+    <section class="services-section" id="services-section">
         <div class="services-container">
-            <h2 class="services-title">Nos services</h2>
+            <h2 class="services-title">Nos services pour vos animaux</h2>
             <div class="services-grid">
                 <!-- Toilettage Card -->
                 <div class="service-card">
                     <div class="service-icon">
                         <img src="{{ asset('img/Grooming.png') }}" alt="Service de toilettage" class="service-img">
                     </div>
-                    <h3>Toilettage</h3>
-                    <p>Offrez à votre compagnon une séance de beauté animale sur mesure pour un style impeccable et une allure éclatante.</p>
+                    <h3>Toilettage professionnel</h3>
+                    <p>Confiez le soin du pelage de votre animal à nos experts pour un look soigné et une hygiène parfaite.</p>
                 </div>
-
                 <!-- Hôtellerie Card -->
                 <div class="service-card">
                     <div class="service-icon">
                         <img src="{{ asset('img/Hospitality.png') }}" alt="Service d'hôtellerie" class="service-img">
                     </div>
-                    <h3>Hôtellerie</h3>
-                    <p>Confiez votre animal à nos soins dans un environnement chaleureux et confortable, conçu pour son bien-être.</p>
+                    <h3>Pension & Hôtellerie</h3>
+                    <p>Partez l’esprit tranquille : nous accueillons votre compagnon dans un environnement sécurisé et chaleureux.</p>
                 </div>
-
                 <!-- Dressage Card -->
                 <div class="service-card">
                     <div class="service-icon">
                         <img src="{{ asset('img/pet-care.png') }}" alt="Service de dressage" class="service-img">
                     </div>
-                    <h3>Dressage</h3>
-                    <p>Aidez votre animal à développer de nouvelles compétences grâce à des séances d'entraînement adaptées et bienveillantes.</p>
+                    <h3>Éducation & Dressage</h3>
+                    <p>Des séances adaptées pour renforcer la complicité et l’obéissance de votre animal, dans la douceur et le respect.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Best Sellers Section -->
-    <section class="bestsellers-section">
+    <section class="bestsellers-section" id="bestsellers-section">
         <div class="bestsellers-container">
             <div class="bestsellers-header">
                 <div class="header-content">
-                    <h2>BEST SELLERS</h2>
-                    <p>Nos produits les plus populaires que les gens et leurs animaux adorent, encore et encore</p>
+                    <h2>Nos meilleures ventes</h2>
+                    <p>Découvrez les produits préférés de nos clients et de leurs compagnons, plébiscités pour leur qualité et leur efficacité.</p>
                 </div>
                 <div class="slider-controls">
                     <button class="slider-btn prev" id="prevBtn">
@@ -163,128 +158,26 @@
                     </button>
                 </div>
             </div>
-
             <div class="products-slider" id="productsSlider">
                 <div class="products-track">
-                    <!-- Product Card 1 -->
+                    @foreach($bestsellers as $product)
                     <div class="product-card">
-                        <h3>PREMIUM MEATY FEAST</h3>
+                        <h3>{{ strtoupper($product->name) }}</h3>
                         <div class="product-image">
-                            <img src="{{ asset('img/petfood.webp') }}" alt="Premium Meaty Feast">
+                            <img src="{{ $product->image_url }}" alt="{{ $product->name }}">
                         </div>
                         <div class="product-info">
                             <span class="shop-label">ACHETER EN LIGNE</span>
                             <div class="price-action">
-                                <span class="price">€19.89</span>
-                                <button class="add-btn">+</button>
+                                <span class="price">€{{ number_format($product->price, 2) }}</span>
+                                <form action="{{ route('cart.add', $product->id) }}" method="POST" style="display:inline;">
+                                    @csrf
+                                    <button type="submit" class="add-btn">+</button>
+                                </form>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Product Card 2 -->
-                    <div class="product-card">
-                        <h3>STANDARD RANGE CHICKEN</h3>
-                        <div class="product-image">
-                            <img src="{{ asset('img/petfood.webp') }}" alt="Standard Range Chicken">
-                        </div>
-                        <div class="product-info">
-                            <span class="shop-label">ACHETER EN LIGNE</span>
-                            <div class="price-action">
-                                <span class="price">€13.47</span>
-                                <button class="add-btn">+</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Product Card 3 -->
-                    <div class="product-card">
-                        <h3>COMPLETE ADULT TURKEY</h3>
-                        <div class="product-image">
-                            <img src="{{ asset('img/petfood.webp') }}" alt="Complete Adult Turkey">
-                        </div>
-                        <div class="product-info">
-                            <span class="shop-label">ACHETER EN LIGNE</span>
-                            <div class="price-action">
-                                <span class="price">€21.62</span>
-                                <button class="add-btn">+</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Product Card 4 -->
-                    <div class="product-card">
-                        <h3>STANDARD RANGE TRIPE</h3>
-                        <div class="product-image">
-                            <img src="{{ asset('img/petfood.webp') }}" alt="Standard Range Tripe">
-                        </div>
-                        <div class="product-info">
-                            <span class="shop-label">ACHETER EN LIGNE</span>
-                            <div class="price-action">
-                                <span class="price">€19.00</span>
-                                <button class="add-btn">+</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Product Card 5 -->
-                    <div class="product-card">
-                        <h3>RABBIT EARS WITH HAIR</h3>
-                        <div class="product-image">
-                            <img src="{{ asset('img/petfood.webp') }}" alt="Rabbit Ears with Hair">
-                        </div>
-                        <div class="product-info">
-                            <span class="shop-label">ACHETER EN LIGNE</span>
-                            <div class="price-action">
-                                <span class="price">€2.88 - €170.32</span>
-                                <button class="add-btn">+</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Product Card 6 -->
-                    <div class="product-card">
-                        <h3>PREMIUM PUPPY FOOD</h3>
-                        <div class="product-image">
-                            <img src="{{ asset('img/petfood.webp') }}" alt="Premium Puppy Food">
-                        </div>
-                        <div class="product-info">
-                            <span class="shop-label">ACHETER EN LIGNE</span>
-                            <div class="price-action">
-                                <span class="price">€24.99</span>
-                                <button class="add-btn">+</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Product Card 7 -->
-                    <div class="product-card">
-                        <h3>SENIOR DOG FORMULA</h3>
-                        <div class="product-image">
-                            <img src="{{ asset('img/petfood.webp') }}" alt="Senior Dog Formula">
-                        </div>
-                        <div class="product-info">
-                            <span class="shop-label">ACHETER EN LIGNE</span>
-                            <div class="price-action">
-                                <span class="price">€22.50</span>
-                                <button class="add-btn">+</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Product Card 8 -->
-                    <div class="product-card">
-                        <h3>GRAIN FREE SPECIAL</h3>
-                        <div class="product-image">
-                            <img src="{{ asset('img/petfood.webp') }}" alt="Grain Free Special">
-                        </div>
-                        <div class="product-info">
-                            <span class="shop-label">ACHETER EN LIGNE</span>
-                            <div class="price-action">
-                                <span class="price">€26.99</span>
-                                <button class="add-btn">+</button>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
